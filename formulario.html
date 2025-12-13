@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de valoración</title>
+    <link rel="icon" href="img_optimizadas/favicon.png">
+</head>
+
+<body>
+
+<header>
+    <h1>Formulario de valoración</h1>
+
+    <a href="index.html">
+        <img src="img_optimizadas/home.png"
+             alt="Volver al inicio"
+             width="40">
+    </a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="conceptos.html">Conceptos</a></li>
+        <li><a href="optimizacion.html">Optimización</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+    </ul>
+</nav>
+
+<main>
+<form action="https://formspree.io/f/mnnewrej" method="POST">
+
+    <fieldset>
+        <legend>Datos de contacto</legend>
+
+        <label for="email">Email de contacto:</label><br>
+        <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Concepto trabajado</legend>
+
+        <label for="concepto">Selecciona un concepto:</label><br>
+        <select id="concepto" name="concepto" required>
+            <option value="Etiquetas de texto">Etiquetas de texto</option>
+            <option value="Listas">Listas</option>
+            <option value="Imágenes">Imágenes</option>
+            <option value="Tablas">Tablas</option>
+            <option value="Formularios">Formularios</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Valoración de la práctica</legend>
+
+        <input type="radio" name="valoracion" value="Difícil" required> Difícil<br>
+        <input type="radio" name="valoracion" value="Difícil no, pero un poco larga sí"> Difícil no, pero un poco larga sí<br>
+        <input type="radio" name="valoracion" value="Normal"> Normal<br>
+        <input type="radio" name="valoracion" value="Fácil"> Fácil<br>
+        <input type="radio" name="valoracion" value="Pan comido"> Pan comido
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Reset">
+
+</form>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 - Actividad HTML</p>
+</footer>
+
+</body>
+</html>
